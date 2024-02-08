@@ -4,7 +4,7 @@ return {
   dependencies = {
     'nvim-lua/plenary.nvim',
     "nvim-telescope/telescope-ui-select.nvim", -- provide better 'call action'
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }, -- better performance
+    { "nvim-telescope/telescope-fzf-native.nvim", enabled = vim.fn.executable "make" == 1, build = "make" } -- better performance
   },
   config = function()
     local telescope = require("telescope")
