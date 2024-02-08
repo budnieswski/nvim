@@ -5,13 +5,18 @@
 Leader key **:SPACE:**
 
 ### Navigation
-| key           | action             |
-|---------------|--------------------|
-| \<leader\>fe  | open file explorer |
-| \<leader\>ff  | find file          |
-| \<leader\>fg  | find in files      |
-| \<leader\>fb  | open buffers       |
-| \<leader\>fh  | help tags          |
+| key            | action             |
+|----------------|--------------------|
+| \<leader\>fe   | open file explorer |
+| \<leader\>ff   | find file          |
+| \<leader\>fg   | find in files      |
+| \<leader\>fb   | open buffers       |
+| \<leader\>fh   | help tags          |
+| <alt/opt>1..9  | tab alternate      |
+| <alt/opt>1..9  | tab alternate      |
+| <alt/opt>.     | tab next           |
+| <alt/opt>,     | tab prev           |
+| <alt/opt>c     | tab close          |
 
 ### Code
 | key           | action            |
@@ -41,5 +46,5 @@ Leader key **:SPACE:**
 | \<leader>sj   | move to down      |
 | \<leader>sk   | move to up        |
 | \<leader>sl   | move to right     |
-| \<leader\>sx  | close             |
+| \<leader\>sc  | close             |
 

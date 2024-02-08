@@ -40,7 +40,7 @@ vim.api.nvim_set_keymap("n", "<leader>sl", "<C-w>l", { noremap = true, silent = 
 -- Splits open, close & resize
 vim.api.nvim_set_keymap("n", "<leader>svv", "<C-w>v", { noremap = true, silent = true })     -- open window vertically
 vim.api.nvim_set_keymap("n", "<leader>shh", "<C-w>s", { noremap = true, silent = true })     -- open window horizontally
-vim.api.nvim_set_keymap("n", "<leader>sx", ":close<CR>", { noremap = true, silent = true }) -- close split window
+vim.api.nvim_set_keymap("n", "<leader>sc", ":close<CR>", { noremap = true, silent = true }) -- close split window
 vim.api.nvim_set_keymap("n", "<leader>se", "<C-w>=", { noremap = true, silent = true })     -- leave the windows the same size
 vim.api.nvim_set_keymap("n", "+", ":vertical resize +5<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "_", ":vertical resize -5<CR>", { noremap = true, silent = true })
@@ -50,3 +50,18 @@ vim.api.nvim_set_keymap("n", "-", ":resize -5<CR>", { noremap = true, silent = t
 -- Stay in indent mode
 vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true, silent = true })
+
+-- Tab bar (Barbar) buffers
+vim.api.nvim_set_keymap("n", "<A-1>", ":BufferGoto 1<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-2>", ":BufferGoto 2<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-3>", ":BufferGoto 3<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-4>", ":BufferGoto 4<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-5>", ":BufferGoto 5<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-6>", ":BufferGoto 6<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-7>", ":BufferGoto 7<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-8>", ":BufferGoto 8<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-9>", ":BufferGoto 9<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-0>", ":BufferLast<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-.>", ":BufferNext<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-,>", ":BufferPrevious<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-c>", ":BufferClose<CR>", { noremap = true, silent = true })
