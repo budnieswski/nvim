@@ -8,15 +8,16 @@ Leader key **:SPACE:**
 | key            | action             |
 |----------------|--------------------|
 | \<leader\>fe   | open file explorer |
-| \<leader\>ff   | find file          |
+| 2x\<leader\>   | find file          |
 | \<leader\>fg   | find in files      |
 | \<leader\>fb   | open buffers       |
 | \<leader\>fh   | help tags          |
-| <alt/opt>1..9  | tab alternate      |
-| <alt/opt>1..9  | tab alternate      |
-| <alt/opt>.     | tab next           |
-| <alt/opt>,     | tab prev           |
-| <alt/opt>c     | tab close          |
+| \<leader\>a    | add harpoon        |
+| \<leader\>r    | rem harpoon        |
+| \<leader\>l    | list harpoon       |
+| \<leader\>[    | prev harpoon       |
+| \<leader\>]    | next harpoon       |
+
 
 ### Code
 | key           | action            |
