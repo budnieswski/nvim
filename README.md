@@ -18,6 +18,11 @@ Leader key **:SPACE:**
 | \<leader\>[    | prev harpoon       |
 | \<leader\>]    | next harpoon       |
 
+#### Find in files (grep)
+| key      | action                                   |
+|----------|------------------------------------------|
+| \<C-k\>  | wrap in quotes                           |
+| \<C-i\>  | wrap in quotes and add ignore case glob  |
 
 ### Code
 | key           | action            |
