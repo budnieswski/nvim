@@ -3,10 +3,11 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "catppuccin",
+				theme = "onedark",
 			},
 			sections = {
-				lualine_c = { { "filename", path = 1 } },
+				lualine_a = { { "buffers" } },
+				lualine_c = { { "filename", path = 1 } }, -- 0=filename | 1=relative path | 2=absolute path
 			},
 		})
 	end,

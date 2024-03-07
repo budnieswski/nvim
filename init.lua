@@ -42,10 +42,17 @@ vim.api.nvim_set_keymap("n", "<leader>svv", "<C-w>v", { noremap = true, silent =
 vim.api.nvim_set_keymap("n", "<leader>shh", "<C-w>s", { noremap = true, silent = true })    -- open window horizontally
 vim.api.nvim_set_keymap("n", "<leader>sc", ":close<CR>", { noremap = true, silent = true }) -- close split window
 vim.api.nvim_set_keymap("n", "<leader>se", "<C-w>=", { noremap = true, silent = true })     -- leave the windows the same size
-vim.api.nvim_set_keymap("n", "+", ":vertical resize +5<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "_", ":vertical resize -5<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "=", ":resize +5<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "-", ":resize -5<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "+", ":vertical resize +5<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "_", ":vertical resize -5<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "=", ":resize +5<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "-", ":resize -5<CR>", { noremap = true, silent = true })
+
+-- buffers
+vim.api.nvim_set_keymap("n", "tk", ":blast<enter>", {noremap=false})
+vim.api.nvim_set_keymap("n", "tj", ":bfirst<enter>", {noremap=false})
+vim.api.nvim_set_keymap("n", "th", ":bprev<enter>", {noremap=false})
+vim.api.nvim_set_keymap("n", "tl", ":bnext<enter>", {noremap=false})
+vim.api.nvim_set_keymap("n", "td", ":bdelete<enter>", {noremap=false})
 
 -- Stay in indent mode
 vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true, silent = true })
