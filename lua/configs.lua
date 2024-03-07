@@ -4,11 +4,11 @@ vim.g.mapleader = " "
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
-vim.autoindent = true
+vim.opt.autoindent = true
 
 -- search
-vim.ignorecase = true
-vim.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- cursor & lines
 vim.opt.cursorline = true -- highlight the current line
