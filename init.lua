@@ -1,5 +1,4 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
@@ -31,29 +30,32 @@ require("lazy").setup({
 	},
 })
 
+local keymap = vim.api.nvim_set_keymap
+local keymapOpt = { noremap = true, silent = true }
+
 -- Splits navigation
-vim.api.nvim_set_keymap("n", "<leader>sh", "<C-w>h", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>sj", "<C-w>j", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>sk", "<C-w>k", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>sl", "<C-w>l", { noremap = true, silent = true })
+keymap("n", "<C-h>", "<C-w>h", keymapOpt)
+keymap("n", "<C-j>", "<C-w>j", keymapOpt)
+keymap("n", "<C-k>", "<C-w>k", keymapOpt)
+keymap("n", "<C-l>", "<C-w>l", keymapOpt)
 
 -- Splits open, close & resize
-vim.api.nvim_set_keymap("n", "<leader>svv", "<C-w>v", { noremap = true, silent = true })    -- open window vertically
-vim.api.nvim_set_keymap("n", "<leader>shh", "<C-w>s", { noremap = true, silent = true })    -- open window horizontally
-vim.api.nvim_set_keymap("n", "<leader>sc", ":close<CR>", { noremap = true, silent = true }) -- close split window
-vim.api.nvim_set_keymap("n", "<leader>se", "<C-w>=", { noremap = true, silent = true })     -- leave the windows the same size
+keymap("n", "<leader>svv", "<C-w>v", keymapOpt) -- open window vertically
+keymap("n", "<leader>shh", "<C-w>s", keymapOpt) -- open window horizontally
+keymap("n", "<leader>sc", ":close<CR>", keymapOpt) -- close split window
+keymap("n", "<leader>se", "<C-w>=", keymapOpt) -- leave the windows the same size
 -- vim.api.nvim_set_keymap("n", "+", ":vertical resize +5<CR>", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("n", "_", ":vertical resize -5<CR>", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("n", "=", ":resize +5<CR>", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("n", "-", ":resize -5<CR>", { noremap = true, silent = true })
 
 -- buffers
-vim.api.nvim_set_keymap("n", "tk", ":blast<enter>", {noremap=false})
-vim.api.nvim_set_keymap("n", "tj", ":bfirst<enter>", {noremap=false})
-vim.api.nvim_set_keymap("n", "th", ":bprev<enter>", {noremap=false})
-vim.api.nvim_set_keymap("n", "tl", ":bnext<enter>", {noremap=false})
-vim.api.nvim_set_keymap("n", "td", ":bdelete<enter>", {noremap=false})
+keymap("n", "tk", ":blast<enter>", keymapOpt)
+keymap("n", "tj", ":bfirst<enter>", keymapOpt)
+keymap("n", "th", ":bprev<enter>", keymapOpt)
+keymap("n", "tl", ":bnext<enter>", keymapOpt)
+keymap("n", "td", ":bdelete<enter>", keymapOpt)
 
 -- Stay in indent mode
-vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true, silent = true })
+keymap("v", "<", "<gv", keymapOpt)
+keymap("v", ">", ">gv", keymapOpt)
