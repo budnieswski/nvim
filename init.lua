@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("configs")
-require("core.autocmd")
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
