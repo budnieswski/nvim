@@ -44,13 +44,14 @@ Leader key **:SPACE:**
 | \<leader\>gb  | toggle git blame        |
 
 ### Splits
-| key           | action            |
-|---------------|-------------------|
-| \<leader\>svv | create vertical   |
-| \<leader\>shh | create horizontal |
-| \<leader>sh   | move to left      |
-| \<leader>sj   | move to down      |
-| \<leader>sk   | move to up        |
-| \<leader>sl   | move to right     |
-| \<leader\>sc  | close             |
+| key          | action            |
+|--------------|-------------------|
+| \<leader\>sv | create vertical   |
+| \<leader\>sh | create horizontal |
+| \<leader\>sc | close             |
+| \<leader\>se | equality size     |
+| \<C-h>h      | move to left      |
+| \<C-j>j      | move to down      |
+| \<C-k>k      | move to up        |
+| \<C-l>l      | move to right     |
 

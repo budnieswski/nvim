@@ -39,8 +39,8 @@ keymap("n", "<C-k>", "<C-w>k", keymapOpt)
 keymap("n", "<C-l>", "<C-w>l", keymapOpt)
 
 -- Splits open, close & resize
-keymap("n", "<leader>svv", "<C-w>v", keymapOpt) -- open window vertically
-keymap("n", "<leader>shh", "<C-w>s", keymapOpt) -- open window horizontally
+keymap("n", "<leader>sv", "<C-w>v", keymapOpt) -- open window vertically
+keymap("n", "<leader>sh", "<C-w>s", keymapOpt) -- open window horizontally
 keymap("n", "<leader>sc", ":close<CR>", keymapOpt) -- close split window
 keymap("n", "<leader>se", "<C-w>=", keymapOpt) -- leave the windows the same size
 -- vim.api.nvim_set_keymap("n", "+", ":vertical resize +5<CR>", { noremap = true, silent = true })
