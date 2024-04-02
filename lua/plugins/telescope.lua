@@ -3,16 +3,16 @@ return {
 	tag = "0.1.5",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
+		{ "nvim-telescope/telescope-fzf-native.nvim", enabled = vim.fn.executable("make") == 1, build = "make" }, -- better performance
 		"nvim-telescope/telescope-ui-select.nvim", -- provide better 'call action'
 		"nvim-telescope/telescope-live-grep-args.nvim", -- provide args for live_grep
-		{ "nvim-telescope/telescope-fzf-native.nvim", enabled = vim.fn.executable("make") == 1, build = "make" }, -- better performance
 	},
 	config = function()
 		local telescope = require("telescope")
 		local builtin = require("telescope.builtin")
 		local actions = require("telescope-live-grep-args.actions")
 
-		require("telescope").setup({
+		telescope.setup({
 			defaults = {
 				file_ignore_patterns = { "node_modules", "vendor" },
 			},
